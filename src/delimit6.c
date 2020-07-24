@@ -268,7 +268,7 @@ int probe6(uint128_t addr, uint32_t n)
    for(i=0 ; i<n ; ++i)
    {  // Build and run nmap
       uint128_t tmp;
-      char cmd[256]                 = {0};
+      char cmd[324]                 = {0};
       char target[INET6_ADDRSTRLEN] = {0};
       tmp = prefix6 + addr + i;
       int128toip6(tmp, &tmpaddr[i]);

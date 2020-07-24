@@ -268,7 +268,7 @@ int probe4(uint32_t addr, uint32_t n)
    for(i=0 ; i<n ; ++i)
    {
       {  // Build command
-         char cmd[256]                 = {0};
+         char cmd[291]                 = {0};
          char target[INET_ADDRSTRLEN]  = {0};
          *(uint32_t *)&tmpaddr[i].sin_addr = htonl(prefix + (addr+i));
          inet_ntop(AF_INET, &tmpaddr[i].sin_addr, target, INET_ADDRSTRLEN);
